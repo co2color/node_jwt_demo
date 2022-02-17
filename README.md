@@ -1,2 +1,7 @@
-# node_jwt_demo
-create jwt token and gets token message
+# super
+
+## Project setup
+```
+node app.js or nodemon app.js
+```
+
