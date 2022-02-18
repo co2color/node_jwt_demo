@@ -11,7 +11,7 @@ router.post('/login', (req, res) => {
       },
       'secret12345',
       {
-        expiresIn: 30
+        expiresIn: 10000
       }
     )
   res.send({
@@ -20,7 +20,7 @@ router.post('/login', (req, res) => {
   })
 })
 router.post('/getToken', (req, res) => {
-  res.send({ data: req.user })
+  res.send({ data: req.auth })
 })
 router.get('/test', (req, res) => {
   res.send({ data: 123 })
